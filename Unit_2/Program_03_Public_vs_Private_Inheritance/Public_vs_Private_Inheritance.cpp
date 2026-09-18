@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+class Base
+{
+public:
+    void show() const
+    {
+        cout << "Base public function" << endl;
+    }
+};
+
+class PublicDerived : public Base
+{
+};
+
+class PrivateDerived : private Base
+{
+public:
+    void callBaseShow() const
+    {
+        show();
+    }
+};
+
+int main()
+{
+    PublicDerived publicObject;
+    publicObject.show();
+
+    PrivateDerived privateObject;
+    privateObject.callBaseShow();
+
+    return 0;
+}
