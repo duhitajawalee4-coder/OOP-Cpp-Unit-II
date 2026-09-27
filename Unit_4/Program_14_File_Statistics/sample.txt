@@ -1,0 +1,3 @@
+C++ File Handling
+This is a sample file.
+12345

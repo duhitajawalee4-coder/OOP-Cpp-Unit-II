@@ -1,0 +1,3 @@
+Welcome to C++ File Handling
+This is the first line written to a file.
+Files store data permanently.
